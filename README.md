@@ -1,5 +1,10 @@
 # Necropolis
-Typescript ScriptUI starter template. Run as a resizable ScriptUI Panel, headless, or from [Kbar](https://aescripts.com/kbar/).
+Typescript ScriptUI starter template. Run as a resizable ScriptUI Panel, headless, or from [Kbar](https://aescripts.com/kbar/). 
+
+Includes:
+- JSON
+- Footer info system
+- Simplified button stack building
 
 <img src="docs/NecropolisPanel.png" width="240">
 
@@ -25,13 +30,13 @@ Within the `buildUI()` function, is an array of button objects. Add new buttons 
 
 ```js
 const buildUI = () => {
-const buttons = [
-    {
-        text: 'Do cool shit',
-        func: 'mainFunc()',
-        helpTip: 'This is a tooltip'
-    },
-]
+    const buttons = [
+        {
+            text: 'Do cool shit',
+            func: 'mainFunc()',
+            helpTip: 'This is a tooltip'
+        },
+    ]
 ...
 ```
 
