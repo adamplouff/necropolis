@@ -11,6 +11,18 @@ Includes:
 
 # Documentation
 
+### Getting started
+1. Clone the repo without history
+```shell
+git clone --depth 1 https://github.com/adamplouff/necropolis.git newProjName
+```
+or use [Degit](https://github.com/Rich-Harris/degit) to clone without an origin:
+```shell
+degit https://github.com/adamplouff/necropolis.git   
+```
+2. Open the project in VS Code and CMD+Shift+F to replace `Necropolis` to your new project name. It's low-tech and simple. 
+
+
 ### Main variables
 
 Update these to change the footer.
