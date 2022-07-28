@@ -153,11 +153,11 @@
     if (isKBarRunning && kbar.button) {
         var button = kbar.button;
         switch (button.argument.toLowerCase()) {
-            case 'run':
-                mainFunc();
+            case 'ui':
+                buildUI();
                 break;
             default:
-                buildUI();
+                mainFunc();
                 break;
         }
     }

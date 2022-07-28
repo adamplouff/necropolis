@@ -130,12 +130,12 @@
         let button = kbar.button;  // Make a local copy of the kbar variable and button.
 
         switch (button.argument.toLowerCase()) {
-            case 'run':     // Kbar argument name
-                mainFunc()
+            case 'ui':     // Kbar argument name
+                buildUI()
                 break;
 
             default:
-                buildUI()
+                mainFunc()
                 break;
         }
     }
