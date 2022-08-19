@@ -67,3 +67,25 @@ switch (button.argument.toLowerCase()) {
         break;
 }
 ```
+
+
+## Scripts
+
+
+### [Update](https://github.com/adamplouff/necropolis/blob/main/node_scripts/update.js)
+(thanks to [Tom Scharstein](https://github.com/Inventsable))
+
+- Updates semantic versioning in: 
+  - `package.json`
+  - `scriptVersion` variable in [host.ts](https://github.com/adamplouff/necropolis/blob/9911dccaeb5d725b1e89d238503c29e31629844b/src/host.ts#L8)
+
+
+### [Package](https://github.com/adamplouff/necropolis/blob/main/node_scripts/package.js)
+(thanks to [Remco Janssen](https://gist.github.com/Klustre))
+
+- Converts `./dist/ProjectName.jsx` to jsxbin
+- Creates a `manual.url` file linking to the `docsUrl` in [package.json](https://github.com/adamplouff/necropolis/blob/9911dccaeb5d725b1e89d238503c29e31629844b/package.json#L14)
+- Zips up all the files as `ProjectName_0.1.0.zip`
+  - ProjectName.jsx
+  - ProjectName manual.url
+  - All files in `./Package/`
