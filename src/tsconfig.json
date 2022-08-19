@@ -10,7 +10,6 @@
     ]
   },
   "files": [
-    // "aequery.js",
     "host.ts"
   ],
   "exclude": [
