@@ -6,7 +6,7 @@ Includes:
 - Footer info system
 - Simplified button stack building
 
-<img src="docs/NecropolisPanel.png" width="240">
+<img src="https://user-images.githubusercontent.com/8580225/185628520-2794035f-435d-4e53-b74b-534bad95c938.png" width="240">
 
 
 # Documentation
