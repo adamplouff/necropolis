@@ -20,7 +20,7 @@ const exportJSXBin = await getExtensionPath()
 
 const packageName = `${name}_${version}`
 const archiveDirectory = `./archive/`
-try { fse.removeSync(`${archiveDirectory}${packageName}.zip`) } catch (error) { } // delete zip file
+try { fse.removeSync(`${archiveDirectory}${packageName}.zip`) } catch (error) { } // delete zip file if it exists
 
 // try creating the folders
 try { fse.mkdirSync(archiveDirectory) } catch (error) { }
@@ -69,20 +69,20 @@ async function getExtensionPath() {
     return path.join(extensionsPath, extendscript, 'public-scripts', 'exportToJSXBin.js')
 }
 
-  function boxLog(str, color, padded = false) {
-    console.log("");
-    if (/green/.test(color)) {
-      console.log(
-        `${padded ? "  " : ""}  ${chalk.black.bgGreen(
-          `  ${str.toUpperCase()}  `
-        )}`
-      );
-    } else {
-      console.log(
-        `${padded ? "  " : ""}  ${chalk.black.bgBlue(
-          `  ${str.toUpperCase()}  `
-        )}`
-      );
-    }
-    console.log("");
+function boxLog(str, color, padded = false) {
+  console.log("");
+  if (/green/.test(color)) {
+    console.log(
+      `${padded ? "  " : ""}  ${chalk.black.bgGreen(
+        `  ${str.toUpperCase()}  `
+      )}`
+    );
+  } else {
+    console.log(
+      `${padded ? "  " : ""}  ${chalk.black.bgBlue(
+        `  ${str.toUpperCase()}  `
+      )}`
+    );
   }
+  console.log("");
+}
